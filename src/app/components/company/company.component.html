@@ -1,0 +1,7 @@
+<ul class="companies d-flex flex-wrap">
+  <li *ngFor="let company of companies" class="col-sm-5 col-lg-2 d-flex flex-column border rounded">
+    <img src="../../../assets/images/{{company.name}}-logo.png">
+    <a href="#" id="paymentLink" routerLink="/payment" class="btn" role="button">
+      payTo: {{company.name}}
+    </a> 
+</ul>
